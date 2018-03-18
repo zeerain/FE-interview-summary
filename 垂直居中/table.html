@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .out-box {
+            height: 500px;
+            width: 500px;
+            border: 1px solid pink;
+
+            /* 核心代码 */
+            text-align: center;
+        }
+
+        .in-box {
+            height: 100px;
+            width: 100px;
+            background-color: royalblue;
+
+            /* 核心代码 */
+            display: inline-block;
+        }
+        .mark {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <tbody>
+            <tr>
+                <td class="out-box">
+                    <div class="in-box"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p class="mark">
+        注：给td父盒子设置text-align: center;
+        <br>
+        给子盒子设置
+        display: inline-block;
+
+    </p>
+</body>
+</html>
